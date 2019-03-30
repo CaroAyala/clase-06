@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+    titulo-de-formulario {
+        color: blueviolet;
+        font-size: 24px;
+        background-color: aqua
+
+    }
+     </style>
+</head>
+<body>
+<!-- Encabezado -->
+    <header>
+    <h1>formulario afip 420</h1>
+    <p>Este formulario te va a robar la vida</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#seccion-1">Seccion 1</a></li>
+            <li><a href="#seccion-2">Seccion 2</a></li>
+            <li><a href="#seccion-3">Seccion 3</a></li>
+        </ul>
+    </nav>
+<!-- Fin de Encabezado -->
+
+<!-- Contenido -->
+<form action="">
+<fieldset>
+    <legend>
+    <titulo-de-formulario>Datos Personales</titulo-de-formulario>
+    </legend>
+    <label for="nombre-y-apellido"> Nombres y apellidos </label>
+    <input type="text" placeholder="Nombres y apellidos">
+    <br>
+    <label for="fecha"> Fecha de Nacimiento </label>
+    <input type="date">
+    <br>
+    <label for="edad"> Edad </label>
+    <input type="number" placeholder="Edad">
+    <br>
+    <!-- Tipo de Sangre -->
+    <label for="tipo-de-sangre"> Tipo de Sangre</label>
+    <span id="tipo-de-sangre">
+    <label for="tipo-de-sangre-0">0</label>
+    <input id="tipo-de-sangre" name="tipo-de-sangre" type="radio">
+    <label for="tipo-de-sangre-A">A</label>
+    <input id="tipo-de-sangre" name="tipo-de-sangre" type="radio">
+    <label for="tipo-de-sangre-B">B</label>
+    <input id="tipo-de-sangre" name="tipo-de-sangre" type="radio">
+    <label for="tipo-de-sangre-AB">AB</label>
+    <input id="tipo-de-sangre" name="tipo-de-sangre" type="radio">
+    </span>
+    <br>
+    <!-- Fin tipo de Sangre -->
+    <label for="rh-de-sangre">Seleccione su RH</label>
+    <select name="rh-de-sangre" id="rh-de-sangre">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="0">0</option>
+    </select>
+    <br>
+    <label for="email"> Email </label>
+    <input type="email" name="email" placeholder="email">
+    <br>
+    <label for="numero-de-telefono"> Numero de telefono </label>
+    <input type="number" name="telefono" placeholder="Telefono">
+    <br>
+    <label for="DNI"> Documento de Identidad </label>
+    <input type="text" name="DNI" placeholder="Documento Nacional de Identidad">
+    <br>
+    <label for="tarjeta-de-credito"> Tarjeta de Credito </label>
+    <input type="number" name="tarjeta de credito" placeholder="Tarjeta de Credito">
+    <br>
+</fieldset>
+</form>
+
+<!-- Fin Contenido -->
+</body>
+</html>
