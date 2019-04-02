@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Formularios</title>
     <style> 
     titulo-de-formulario {
         color: blueviolet;
         font-size: 24px;
         background-color: aqua
 
+    }
+    subtitulo-de-formulario {
+        color: chocolate;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif
     }
      </style>
 </head>
@@ -29,7 +34,7 @@
     </nav>
 <!-- Fin de Encabezado -->
 
-<!-- Contenido -->
+<!-- Contenido Datos Personales-->
 <form action="">
 <fieldset>
     <legend>
@@ -80,6 +85,94 @@
 </fieldset>
 </form>
 
-<!-- Fin Contenido -->
+<!-- Fin Contenido Datos Personales-->
+
+<!-- Comienzo Contenido Datos Estado Civil -->
+<form action="">
+<fieldset>
+    <legend>
+    <Titulo-del-formulario>Estado Civil</Titulo-del-formulario> 
+    </legend>
+    <label for="estado-civil"> Estado Civil </label>
+    <select name="estado-civil" id="estado-civil">
+    <option value="Soltero"> Soltero </option>
+    <option value="Casado"> Casado </option>
+    <option value="Convive"> Convive </option>    
+
+    <legend><SubTitulo-del-formulario>Esposo/a-Pareja</SubTitulo-del-formulario></legend>      
+    <br>
+    <label for="nombre-y-apellido"> Nombres y apellidos </label>
+    <input type="text" placeholder="Nombres y apellidos">
+    <br>
+    <label for="DNI"> DNI (sin puntos ni comas) </label>
+    <input type="number" placeholder="DNI">
+    <br>
+    <label for="edad"> Edad </label>
+    <input type="number" placeholder="Edad">
+    <br>
+    <label for="estudios"> Estudios </label>
+    <input type="text" placeholder="Estudios">
+    <br>
+    <label for="domicilio-laboral"> Domicilio Laboral</label>
+    <input type="text" placeholder="Domicilio Laboral">
+    <br>
+    <label for="localidad"> Localidad </label>
+    <input type="text" placeholder="Localidad">
+    <br>
+    <label for="telefono"> Telefono </label>
+    <input type="number" placeholder="Telefono">
+<!-- Fin Contenido Datos Estado Civil -->
+</fieldset>    
+</form>
+
+<!-- Comienzo Contenido Datos Hijos -->
+<form action="">
+<fieldset>
+<legend>
+<Titulo-del-formulario>Hijos</Titulo-del-formulario> 
+</legend>
+    <label for="hijos"> Hijos </label>
+    <span id="hijos">
+    <label for="hijos-si">si</label>
+    <input id="hijos-si" name="hijos" type="radio">
+    <label for="hijos-no">no</label>
+    <input id="hijos-no" name="hijos" type="radio">
+    <br>
+<label for="cantidad-de-hijos">Cantidad de Hijos</label>
+<select name="cantidad-de-hijos" id="cantidad-de-hijos">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="mas">más</option>
+    <br>
+</select>
+<h4>Hijo 1</h4>
+<label for="nombre-y-apellido"> Nombres y apellidos </label>
+<input type="text" placeholder="Nombres y apellidos"><br>
+<label for="sexo"> sexo </label>
+<input type="sexo" placeholder="Sexo"><br>
+<label for="DNI"> DNI (sin puntos ni comas) </label>
+<input type="number" placeholder="DNI"><br>
+<label for="edad"> Edad </label>
+<input type="number" placeholder="Edad"><br>
+<label for="Colegio"> Colegio al que concurre </label>
+<input type="text" placeholder="Colegio al que concurre"><br>
+<h4>Hijo 2</h4>
+<label for="nombre-y-apellido"> Nombres y apellidos </label>
+<input type="text" placeholder="Nombres y apellidos"><br>
+<label for="sexo"> sexo </label>
+<input type="sexo" placeholder="Sexo"><br>
+<label for="DNI"> DNI (sin puntos ni comas) </label>
+<input type="number" placeholder="DNI"><br>
+<label for="edad"> Edad </label>
+<input type="number" placeholder="Edad"><br>
+<label for="Colegio"> Colegio al que concurre </label>
+<input type="text" placeholder="Colegio al que concurre"><br>
+<!-- Fin Contenido Datos Hijos -->
+</form>
+
+<button>Enviar</button>
 </body>
 </html>
